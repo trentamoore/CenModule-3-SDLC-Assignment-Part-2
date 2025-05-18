@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class LibrarySystem {
     /**
-     * Maintains insertion order of patrons by their unique ID.
+     * Maintains inserte order of patrons by their unique ID.
      * Key: patron ID, Value: Patron object
      */
     private final Map<String, Patron> patrons = new LinkedHashMap<>();
@@ -75,7 +75,7 @@ public class LibrarySystem {
         if (patrons.isEmpty()) {
             System.out.println("No patrons in the system.");
         } else {
-            // Leverage Patron.toString() for formatted output
+            //  Patron.toString() for formatted output
             patrons.values().forEach(System.out::println);
         }
     }
